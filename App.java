@@ -1,21 +1,27 @@
-package mystudent;
+import static java.sql.DriverManager.println;
 
-public class App {
-    public static void main(String[] args) {
-        System.out.println("\n Hello from class App \n\n");
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args){
 
-        // Create a student object
         Student myStudent = new Student();
+        myStudent.firstName = "Jim";
+        myStudent.lastName = "Halpert";
+        myStudent.major = "Business";
+        myStudent.gpa = 2.3;
+        myStudent.age = 24;
+        myStudent.onProbation = false;
 
-        // Fill the new myStudent object's data fields
-        myStudent.firstName = "Dennis";
-        myStudent.lastname = "Mohle";
-        myStudent.gpa = 3.4;
-        myStudent.major = "Computer Science";
-        myStudent.city = "Fresno";
+        Student myStudent2 = new Student();
+        myStudent.firstName = "Pam";
+        myStudent.lastName = "Beasley";
+        myStudent.major = "Art";
+        myStudent.gpa = 2.5;
+        myStudent.age = 23;
+        myStudent.onProbation = true;
 
-        System.out.println("\n The first name of the student is: " + myStudent.firstName + "\n");
-        System.out.println("\n The last name of the student is: " + myStudent.lastname + "\n");
+        System.out.println(myStudent.firstName);
 
     }
 }
